@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+span {
+    font-style: italic;
+}
+
+.cont {
+    display: inline-block;
+    border-style: solid ;
+    border-width: 0.5px;
+    padding: 10px;
+}
+
+.cont>p {
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.imgDiv {
+    float: right;
+    border-style: solid;
+    padding: 5px;
+    border-width: 0.5px;
+    margin-left: 20px;
+}
+
+.imgDiv>div {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.Logo5 {
+    width: 100px;
+   
+}
+
+
+/* float: можно выставить расположение текста/картинки  */
+
+/* justify-content; работает только в flex и по горизонтали*/
+
+/* display: flex; - отоброжает все в одну линию. есть свойства: свойства flex */
+
+/* inline - строчный вид отоброжения  */
+
+/* padding отступы до центра внутри контейнера p */
+
+/* margin отступы от края до края */
+
+/* для inline не свойственно параметры высоты и ширины заданных в ручную */
+
+/* внутри inline контейнера, обтекает контент, который в них содержится */
+
+/* display:inline-block; - становится блочным и прддается высоте и ширине */
+
+/* ТЕКСТ */
+
+
+
+/* ПАНЕЛЬ НАВИГАЦИИ ВВЕРХНЯЯ */
+
+/* justify-content: space-between; Поместить справа и слева по максимуму */
+/* list-style: none; убираются точки */
+.Navig {
+    display: flex;
+    justify-content: space-between;
+background-color: rgb(9, 164, 9);
+}
+
+.Navig>nav>ul {
+display: flex;
+list-style: none;
+align-items: center;
+margin: 0px;
+padding: 0px;
+
+}
+
+.Navig>nav>ul>li>a {
+display: block;
+padding: 10px;
+border-style: solid;
+border-width: 0.5px;
+}
+
+@media (max-width: 900px) {
+    .Navig {
+        flex-direction: column;
+    }
+}
+
+
+
+/* ПАНЕЛЬ СБОКУ */
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+width: 14%;
+background-color: brown;
+}
+
+.section {
+    width: 82%;
+}
+
+.text-page {
+    padding-left: 20px;
+}
+
+
+.header>ol {
+    list-style: none;
+    border-bottom-style: solid ;
+    border-width: 0.5px;
+    margin: 15px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header>div {
+    width: 100%;
+
+}
+
+.header>div>img
+{
+    width: 100%;
+}
+/*  border-bottom-style: solid ; - Снизу появляется линия, которую можно редактировать */
+/* не полностью заполнил поисковы строки, заполнив остально justify-contont-ом  */
